@@ -1,9 +1,24 @@
 <template>
-  <h1>The users view</h1>
+  <dir>
+    <h1>The users view</h1>
+    <input type="text" v-model="userId" />
+    <button @click="onLoadUser">Load User</button>
+  </dir>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      userId: "",
+    };
+  },
+  methods: {
+    onLoadUser() {
+      this.$router.push("/users/" + this.userId);
+    },
+  },
+};
 </script>
 
 <style>
