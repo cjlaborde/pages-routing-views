@@ -22,5 +22,5 @@ export default {
   layout: "users",
 };
 </script>
-<style>
+<style scoped>
 </style>
