@@ -12,6 +12,7 @@ export default {
     /* Validates incomming id to only accept numbers using regex */
     return /^\d+$/.test(data.params.id);
   },
+  layout: "users",
 };
 </script>
 
